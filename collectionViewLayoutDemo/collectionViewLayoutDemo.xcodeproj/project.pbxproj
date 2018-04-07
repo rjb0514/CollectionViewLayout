@@ -20,6 +20,8 @@
 		939D83E4207716C200A1C172 /* RJBGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 939D83E3207716C200A1C172 /* RJBGridViewController.m */; };
 		939D83E7207716CF00A1C172 /* RJBCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 939D83E6207716CF00A1C172 /* RJBCircleViewController.m */; };
 		939D83EB2077185700A1C172 /* ChangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 939D83EA2077185700A1C172 /* ChangeViewController.m */; };
+		939D83F1207879AF00A1C172 /* RJBWaterLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 939D83F0207879AF00A1C172 /* RJBWaterLayoutViewController.m */; };
+		939D83F420787B3C00A1C172 /* RJBWaterLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 939D83F320787B3C00A1C172 /* RJBWaterLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,10 @@
 		939D83E6207716CF00A1C172 /* RJBCircleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBCircleViewController.m; sourceTree = "<group>"; };
 		939D83E92077185700A1C172 /* ChangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangeViewController.h; sourceTree = "<group>"; };
 		939D83EA2077185700A1C172 /* ChangeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangeViewController.m; sourceTree = "<group>"; };
+		939D83EF207879AF00A1C172 /* RJBWaterLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBWaterLayoutViewController.h; sourceTree = "<group>"; };
+		939D83F0207879AF00A1C172 /* RJBWaterLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBWaterLayoutViewController.m; sourceTree = "<group>"; };
+		939D83F220787B3C00A1C172 /* RJBWaterLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBWaterLayout.h; sourceTree = "<group>"; };
+		939D83F320787B3C00A1C172 /* RJBWaterLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBWaterLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +85,11 @@
 		939D83B92077129300A1C172 /* collectionViewLayoutDemo */ = {
 			isa = PBXGroup;
 			children = (
-				939D83E82077184C00A1C172 /* 布局的切换 */,
 				939D83D32077144400A1C172 /* CircleLayout(环形) */,
 				939D83D62077144400A1C172 /* GridLayout(格子) */,
 				939D83D92077144400A1C172 /* LineLayout(线性) */,
+				939D83EE2078798A00A1C172 /* 瀑布流 */,
+				939D83E82077184C00A1C172 /* 布局的切换 */,
 				939D83BB2077129300A1C172 /* AppDelegate.m */,
 				939D83BD2077129300A1C172 /* ViewController.h */,
 				939D83BE2077129300A1C172 /* ViewController.m */,
@@ -136,6 +143,17 @@
 				939D83EA2077185700A1C172 /* ChangeViewController.m */,
 			);
 			path = "布局的切换";
+			sourceTree = "<group>";
+		};
+		939D83EE2078798A00A1C172 /* 瀑布流 */ = {
+			isa = PBXGroup;
+			children = (
+				939D83EF207879AF00A1C172 /* RJBWaterLayoutViewController.h */,
+				939D83F0207879AF00A1C172 /* RJBWaterLayoutViewController.m */,
+				939D83F220787B3C00A1C172 /* RJBWaterLayout.h */,
+				939D83F320787B3C00A1C172 /* RJBWaterLayout.m */,
+			);
+			path = "瀑布流";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,7 +232,9 @@
 				939D83DE2077144500A1C172 /* RJBLineFlowLayout.m in Sources */,
 				939D83DC2077144500A1C172 /* RJBCircleFlowLayout.m in Sources */,
 				939D83CA2077129500A1C172 /* main.m in Sources */,
+				939D83F420787B3C00A1C172 /* RJBWaterLayout.m in Sources */,
 				939D83E4207716C200A1C172 /* RJBGridViewController.m in Sources */,
+				939D83F1207879AF00A1C172 /* RJBWaterLayoutViewController.m in Sources */,
 				939D83DD2077144500A1C172 /* RJBGridLayout.m in Sources */,
 				939D83BC2077129300A1C172 /* AppDelegate.m in Sources */,
 				939D83E7207716CF00A1C172 /* RJBCircleViewController.m in Sources */,

@@ -15,13 +15,25 @@
 @end
 
 
+
+
+/**
+ 继承于 UICollectionViewLayout   自定义的layout 要实现以下4个方法
+ */
+
+
 @implementation RJBGridLayout
 
+
+
+/**
+ 1. 实现的第一个方法
+ */
 - (void)prepareLayout {
     [super prepareLayout];
     
     NSLog(@"%s",__func__);
-    //先移除
+    // 注意： 清楚之前的所有属性
     [self.attrsArr removeAllObjects];
     
     
@@ -39,9 +51,12 @@
     
 }
 
+/**
+ 2. 实现的第2个方法
+ */
 - (NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect {
     
-    
+        NSLog(@"%s",__func__);
     
     return self.attrsArr;
 }
@@ -55,7 +70,12 @@
  @param indexPath indexPath
  @return UICollectionViewLayoutAttributes
  */
+
+/**
+ 3. 实现的第3个方法
+ */
 - (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath {
+        NSLog(@"%s",__func__);
     UICollectionViewLayoutAttributes *attri = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
 
     //计算frame
@@ -97,11 +117,16 @@
 }
 
 
+
+/**
+ 4. 实现的第4个方法
+ */
+
 //以为继承的是UICollectionViewLayout
 #pragma mark - 重新这个方法 返回滚动内容的大小 否则不会滚动
 - (CGSize)collectionViewContentSize {
     
-    
+        NSLog(@"%s",__func__);
     
     //算出有多少行
     NSInteger row = (self.attrsArr.count + 2 ) / 3;

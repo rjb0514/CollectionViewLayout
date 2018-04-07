@@ -11,6 +11,7 @@
 #import "RJBCircleViewController.h"
 #import "RJBGridViewController.h"
 #import "ChangeViewController.h"
+#import "RJBWaterLayoutViewController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -24,7 +25,7 @@
 
 - (NSArray *)dataArr {
     if (!_dataArr) {
-        _dataArr = @[@"线性布局",@"环形布局",@"格子布局",@"组合切换"];
+        _dataArr = @[@"线性布局",@"环形布局",@"格子布局",@"瀑布流",@"组合切换"];
     }
     return _dataArr;
 }
@@ -66,6 +67,10 @@
         //格子
         RJBGridViewController *VC = [RJBGridViewController new];
         [self.navigationController pushViewController:VC animated:YES];
+    }else if (indexPath.row == 3) {
+        RJBWaterLayoutViewController *VC = [RJBWaterLayoutViewController new];
+        [self.navigationController pushViewController:VC animated:YES];
+        
     }else {
         //多个布局切换
         ChangeViewController *VC = [ChangeViewController new];

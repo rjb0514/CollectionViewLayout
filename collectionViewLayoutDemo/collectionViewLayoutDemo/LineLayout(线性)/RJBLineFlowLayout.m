@@ -21,6 +21,7 @@
 }
 
 
+//MARK: - 继承自流水布局 默认这个方法是控制的 
 /*显示的范围发生改变的时候是否需要重新刷新布局
  1.会调用 prepareLayout
  2.会调用 layoutAttributesForElementsInRect
